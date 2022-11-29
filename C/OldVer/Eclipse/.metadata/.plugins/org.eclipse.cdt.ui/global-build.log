@@ -1,0 +1,3 @@
+Configuring in: C:\Users\etsuy\Desktop\Study\C\Eclipse\Test\build\default
+cmake -G MinGW Makefiles -DCMAKE_EXPORT_COMPILE_COMMANDS=ON C:\Users\etsuy\Desktop\Study\C\Eclipse\Test
+Error: build command 'cmake' not found

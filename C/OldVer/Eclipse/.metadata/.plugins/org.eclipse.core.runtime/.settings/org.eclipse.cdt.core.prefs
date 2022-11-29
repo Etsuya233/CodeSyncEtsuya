@@ -1,0 +1,4 @@
+config/Test/cdt.launchMode=run
+config/Test/cdt.toolChain.id=gcc-x86_64-C\:/MinGW/bin/gcc.exe
+config/Test/cdt.toolChain.type=org.eclipse.cdt.build.gcc
+eclipse.preferences.version=1

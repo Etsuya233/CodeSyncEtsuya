@@ -1,0 +1,37 @@
+# Project: Test
+# Makefile created by Red Panda C++ 1.1.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = Test_private.res
+OBJ      = main.o ../../NumberReader3.o $(RES)
+LINKOBJ  = main.o ../../NumberReader3.o $(RES)
+CLEANOBJ  =  main.o ..\..\NumberReader3.o Test_private.res Test.exe
+LIBS     =  -static
+INCS     =  
+CXXINCS  =  
+BIN      = Test.exe
+CXXFLAGS = $(CXXINCS)  -g3 -O2 -pipe -D__DEBUG__
+CFLAGS   = $(INCS)  -g3 -O2 -pipe -D__DEBUG__
+RM       = del /q /f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CPP) -c C:/Users/etsuy/Desktop/Study/C/Test/Test/main.c -o main.o $(CXXFLAGS) 
+
+../../NumberReader3.o: ../../NumberReader3.c
+	$(CC) -c C:/Users/etsuy/Desktop/Study/C/NumberReader3.c -o ../../NumberReader3.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Test_private.res: Test_private.rc 
+	$(WINDRES) -i Test_private.rc --input-format=rc -o Test_private.res -O coff 
+

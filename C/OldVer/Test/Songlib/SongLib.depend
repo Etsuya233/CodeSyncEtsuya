@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1660873178 source:c:\users\etsuy\desktop\study\c\test\songlib\list.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"list.h"
+
+1660794883 c:\users\etsuy\desktop\study\c\test\songlib\list.h
+
+1660877606 source:c:\users\etsuy\desktop\study\c\test\songlib\listxt.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<string.h>
+	"listxt.h"
+
+1660877184 c:\users\etsuy\desktop\study\c\test\songlib\listxt.h
+
+1660877715 source:c:\users\etsuy\desktop\study\c\test\songlib\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<string.h>
+	"list.h"
+	"listxt.h"
+

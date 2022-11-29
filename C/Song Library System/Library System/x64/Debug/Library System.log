@@ -1,0 +1,4 @@
+﻿  main.c
+D:\Etsuya\CProgramming\Library System\Library System\main.c(143,7): warning C4101: “temp”: 未引用的局部变量
+D:\Etsuya\CProgramming\Library System\Library System\main.c(176,8): warning C4101: “temp”: 未引用的局部变量
+  Library System.vcxproj -> D:\Etsuya\CProgramming\Library System\x64\Debug\Library System.exe
