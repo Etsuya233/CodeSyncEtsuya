@@ -1,0 +1,19 @@
+﻿  main.c
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(38,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(43,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(44,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(45,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(110,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(126,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(133,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(146,105): warning C4047: “函数”:“char *”与“char (*)[12]”的间接级别不同
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(146,90): warning C4024: “inputString”: 形参和实参 5 的类型不同
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(147,109): warning C4047: “函数”:“char *”与“char (*)[22]”的间接级别不同
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(147,92): warning C4024: “inputString”: 形参和实参 5 的类型不同
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(174,104): warning C4047: “函数”:“char *”与“char (*)[12]”的间接级别不同
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(174,89): warning C4024: “inputString”: 形参和实参 5 的类型不同
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(175,108): warning C4047: “函数”:“char *”与“char (*)[22]”的间接级别不同
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(175,91): warning C4024: “inputString”: 形参和实参 5 的类型不同
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(183,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\StudentManagement\main.c(209,32): warning C4047: “=”:“int”与“int *”的间接级别不同
+  StudentManagement.vcxproj -> D:\Etsuya\Programming\Workspace\vs0002\StudentManagement\x64\Debug\StudentManagement.exe
