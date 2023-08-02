@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index - Register</title>
+
+    <style>
+        /*这里是CSS!我们这样可以为各种标签自定义格式!!*/
+        td{
+            border: 1px solid #333;
+            text-align: center;
+        }
+        table{
+            text-align: center;
+            border: 2px solid black;
+        }
+        th{
+            text-align: center;
+        }
+
+        .first {
+            width: 49%;
+            float:left;
+            height: 200px;
+            border: 1px solid #3B6273;
+        }
+        .second {
+            width: 49%;
+            float:right;
+            height: 200px;
+            border: 1px solid #3B6273;
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center; color: darkgreen">Index - Register</h1>
+
+<!--ul: unordered list-->
+<!--li: list item-->
+<ul style="list-style: square">
+    <li>China</li>
+    <li>USA</li>
+</ul>
+
+<!--ol: ordered list-->
+<ol>
+    <li>Japan</li>
+    <li>South Korea</li>
+</ol>
+
+<!--
+table: 表格标签
+tr: table row 一行表格
+th: table head 表头
+td: table data 表数据,与th同级
+-->
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td><a href="https://www.taylorswift.com/" target="myiframe">Taylor Swift</a></td>
+        <td>Female</td>
+        <td>USA</td>
+    </tr>
+    <tr>
+        <td>4yen</td>
+        <td>Male</td>
+        <td>Japan</td>
+    </tr>
+    <tr>
+        <td colspan="3">None!!!</td>
+    </tr>
+    <tr>
+        <td>Olivia Rodrigo</td>
+        <td>Female</td>
+        <td>USA</td>
+    </tr>
+</table><br/>
+
+<!--
+iframe: 小窗口网页
+-->
+<div class="first">
+<iframe style="height: 195px" name="myiframe" src="https://www.baidu.com/"></iframe>
+</div>
+<div class="second">
+
+<!--
+form: 表格
+     type表示文本框类型
+            text
+            password
+            ...
+            reset 一个按钮 用来恢复默认值
+        value表示默认值
+        maxlength表示最大长度
+        name可以用来匹配（比如单选框）
+        checked用来表示单选框默认值
+        selected用来表示下拉框的默认
+        textarea多行文本输入框（注意默认值设置方式）
+-->
+<form method="get">
+<table>
+    <tr><td>Name</td><td><input type="text" name="form_name"></td></tr>
+    <tr><td>Singer</td><td><input type="radio" name="form_singer" value="form_taylor"/><label>Taylor Swift</label><input type="radio" name="form_singer" value="form_olivia">Olivia</td></tr>
+    <tr><td><input type="submit"></td><td><input type="reset"></td></tr>
+</table>
+</form>
+</div>
+<form>
+    Username: <input type="text" value="default username" /><br />
+    Password: <input type="password" maxlength="12" x /><br />
+    Gender: <input type="radio" name="sex" checked="checked" />Male <input type="radio" name="sex" />Female<br>
+    Hobby: <input type="checkbox" />C++ <input type="checkbox" checked="checked"/> Java<br>
+    Country:
+    <select>
+        <option>---Please select---</option>
+        <option selected="selected">China</option>
+        <option>USA</option>
+        <option>Japan</option>
+    </select><br>
+    Introduction:
+    <textarea rows="10" cols="16">我他妈才是默认值</textarea><br>
+    <input type="reset" value="Reset" />  <input type="submit" value="Submit"/>
+</form>
+
+<div>
+    其他标签
+    <p>
+        br和p的不同在于，一个是段落，段落段落之间会有间隔，而换行是文字换行！
+    </p>
+    <p>
+        下面是一个图片元素，标签里面有很多属性！
+        <img src="my.jpg" width="220" height="330" alt="这个图片标签"/>
+    </p>
+    <p>
+        下面是标签，标签只有1-6号！
+    <h1>一号标题</h1>
+    <h2>二号标题</h2>
+    <h6>六号标题</h6>
+    </p>
+    <p>
+        这是一个超链接！
+        <a href="https://www.google.com/">访问Google：这是一个链接</a>
+    </p>
+    <p>
+        这是一个分割线！
+    <hr>
+    </p>
+    <p>
+        这里是文本格式化！
+        <b>粗体</b><br/>
+        <i>斜体</i><br/>
+        <em>着重</em><br/>
+        <small>小号</small><br/>
+        <strong>加重语气</strong><br/>
+        <sub>上标</sub><br/>
+        <sup>下标</sup><br/>
+        <ins>插入</ins><br/>
+        <del>删除</del><br/>
+    </p>
+</div>
+</body>
+</html>

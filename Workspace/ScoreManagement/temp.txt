@@ -1,0 +1,6 @@
+fgets(strLine, 20, dat); // Get id
+			strcpy(arr[i].id, strLine);
+			fgets(strLine, 20, dat);	//Get name
+			strcpy(arr[i].name, strLine);
+			fgets(strLine, 20, dat);
+			arr[i].score = 0;

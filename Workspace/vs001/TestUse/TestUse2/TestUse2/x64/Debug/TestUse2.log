@@ -1,0 +1,8 @@
+﻿  main.cpp
+D:\Etsuya\Programming\Workspace\vs001\TestUse\TestUse2\TestUse2\main.cpp(32,26): error C2131: 表达式的计算结果不是常数
+D:\Etsuya\Programming\Workspace\vs001\TestUse\TestUse2\TestUse2\main.cpp(32,14): message : 因读取超过生命周期的变量而失败
+D:\Etsuya\Programming\Workspace\vs001\TestUse\TestUse2\TestUse2\main.cpp(32,14): message : 请参见“foot”的用法
+D:\Etsuya\Programming\Workspace\vs001\TestUse\TestUse2\TestUse2\main.cpp(36,20): error C3863: 不可指定数组类型“int [foot-half+1]”
+D:\Etsuya\Programming\Workspace\vs001\TestUse\TestUse2\TestUse2\main.cpp(41,20): error C3863: 不可指定数组类型“int [foot-half+1]”
+D:\Etsuya\Programming\Workspace\vs001\TestUse\TestUse2\TestUse2\main.cpp(49,19): error C3863: 不可指定数组类型“int [foot-half+1]”
+D:\Etsuya\Programming\Workspace\vs001\TestUse\TestUse2\TestUse2\main.cpp(52,19): error C3863: 不可指定数组类型“int [foot-half+1]”

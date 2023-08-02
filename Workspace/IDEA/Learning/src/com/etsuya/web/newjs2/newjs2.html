@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function seeUnorderedList(){
+            var a = document.getElementById("whichul").value;
+            //a string
+            var ul = document.getElementById(a);
+            var childNodes = ul.getElementsByTagName("li");
+            var display = "";
+            for(var i = 0; i < childNodes.length; i++){
+                display += childNodes[i].innerText;
+            }
+            alert(display);
+        }
+    </script>
+</head>
+<body>
+    <ul id="unordered_list_a">
+        <li>hello</li>
+        <li>what</li>
+        <li>bitch</li>
+    </ul><br/>
+    <input type="text" id="whichul"/>
+    <button onclick="seeUnorderedList();">Click me</button>
+</body>
+</html>

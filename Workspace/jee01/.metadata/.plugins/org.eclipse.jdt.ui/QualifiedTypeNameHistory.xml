@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.etsuya.test.PersonTest"/>
+    <fullyQualifiedTypeName name="com.etsuya.prac.mOLUtil"/>
+    <fullyQualifiedTypeName name="com.etsuya.prac.ArgTest"/>
+    <fullyQualifiedTypeName name="com.etsuya.arraytest.LaLibsTest"/>
+    <fullyQualifiedTypeName name="com.etsuya.review.privateTest"/>
+    <fullyQualifiedTypeName name="com.etsuya.review.PrivateTest"/>
+    <fullyQualifiedTypeName name="com.etsuya.myUtil.quickSortTest"/>
+    <fullyQualifiedTypeName name="com.etsuya.review.Review"/>
+    <fullyQualifiedTypeName name="com.etsuya.supertest.Person"/>
+    <fullyQualifiedTypeName name="com.etsuya.account.Account"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="com.etsuya.prac2.GeometricObject"/>
+    <fullyQualifiedTypeName name="com.etsuya.prac2.MyRectangle"/>
+    <fullyQualifiedTypeName name="com.etsuya.prac2.GeometricTest"/>
+    <fullyQualifiedTypeName name="com.etsuya.prac3.GeometricObject"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="javax.annotation.processing.SupportedSourceVersion"/>
+    <fullyQualifiedTypeName name="com.etsuya.review.permissionTest"/>
+    <fullyQualifiedTypeName name="com.etsuya.review.Permission"/>
+    <fullyQualifiedTypeName name="com.etsuya.review2.TestClass1"/>
+    <fullyQualifiedTypeName name="com.etsuya.review2.TestClass2"/>
+    <fullyQualifiedTypeName name="com.etsuya.review3.GeometricObject"/>
+    <fullyQualifiedTypeName name="javax.naming.ldap.SortResponseControl"/>
+    <fullyQualifiedTypeName name="com.etsuya.review3.Rectangle"/>
+    <fullyQualifiedTypeName name="com.etsuya.review3.myEntry"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,16 @@
+.title {
+    text-align: center;
+    font-family: "思源宋体 CN";
+}
+
+.normal_form {
+    font-family: Inter, "思源宋体 CN";
+    align-items: center;
+    text-align: center;
+}
+
+.normal_table{
+    margin-right: auto;
+    margin-left: auto;
+
+}

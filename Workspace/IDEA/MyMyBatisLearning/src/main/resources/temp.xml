@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>    <!-- 这里是xml文件的声明 -->
+        <!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 开头的configuration是该xml文件的根标签名，而上边的网址写的是它的dtd约束 -->
+
+<configuration>
+    <!--这个可以省略，是为了让mybatis更加灵活。实质上就是Properties类-->
+    <!--这里的东西相当于这个文件的全局常量。下面可以通过${name}来获取value-->
+    <!--但是，还有更加好的方式-->
+    <!--<properties>-->
+    <!--    <property name="jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>-->
+    <!--</properties>-->
+
+    <!--比上面更加好的properties，通过外部文件引入-->
+    <!--其中，resource标签可以换成url，表示从绝对路劲加载资源：file:///路径（下面的mapper同理）-->
+    <properties resource="jdbc.properties" />
+
+
+    <!--environment标签里的default是默认的environment id，假如没有指定environment-->
+    <environments default="mybatisDB">
+
+        <!--下面是其中的一个环境，连接的数据库是我的mybatis，它的id是mybatisDB-->
+        <!--而且，一般一个environment对应一个数据库，也就是一个SqlSessionFactory对象-->
+        <environment id="mybatisDB">
+            <!--transactionManager:  看注解一-->
+            <transactionManager type="JDBC"/>
+            <!--dataSource： 看注解二-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="ety2004"/>
+            </dataSource>
+        </environment>
+
+        <!--另一个数据库，连接的是bjpower数据库-->
+        <environment id="bjpowerDB">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/bjpower"/>
+                <property name="username" value="root"/>
+                <property name="password" value="ety2004"/>
+                </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="CarMapper.xml"/>
+    </mappers>
+</configuration>

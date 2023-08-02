@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>表单</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <form>
+<!--        type表示文本框类型
+                text
+                password
+                ...
+                reset 一个按钮 用来恢复默认值
+            value表示默认值
+            maxlength表示最大长度
+            name可以用来匹配（比如单选框）
+            checked用来表示单选框默认值
+            selected用来表示下拉框的默认
+            textarea多行文本输入框（注意默认值设置方式）
+-->
+        Username: <input type="text" value="default username" /><br />
+        Password: <input type="password" maxlength="12" x /><br />
+        Gender: <input type="radio" name="sex" checked="checked" />Male <input type="radio" name="sex" />Female<br>
+        Hobby: <input type="checkbox" />C++ <input type="checkbox" checked="checked"/> Java<br>
+        Country:
+        <select>
+            <option>---Please select---</option>
+            <option selected="selected">China</option>
+            <option>USA</option>
+            <option>Japan</option>
+        </select><br>
+        Introduction:
+        <textarea rows="10" cols="16">我他妈才是默认值</textarea><br>
+        <input type="reset" value="Reset" />  <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

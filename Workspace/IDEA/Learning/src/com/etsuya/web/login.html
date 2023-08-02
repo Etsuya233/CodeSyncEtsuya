@@ -1,0 +1,51 @@
+<html lang="zh">
+<head>
+    <title>Etsuya: Login</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="login_css.css">
+</head>
+<body>
+    <h1 class="title">User Login</h1>
+    <hr />
+    <form action="http://localhost:8080" method="get" class="normal_form">
+        <table class="normal_table">
+            <tr>
+                <td>Username: </td>
+                <td><input type="text" name="name" placeholder="John Smith"></td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td><input type="password" name="password"/></td>
+            </tr>
+            <tr>
+                <td>Subject: </td>
+                <td>
+                    <input type="checkbox" name="subject" value="java"/>Java
+                    <input type="checkbox" name="subject" value="cpp"/>C++
+                    <input type="checkbox" name="subject" value="js"/>JavaScript
+                </td>
+            </tr>
+            <tr>
+                <td>Country: </td>
+                <td>
+                    <select>
+                        <option value="cn">China</option>
+                        <option value="us">USA</option>
+                        <option value="jp">Japan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Introduction: </td>
+                <td>
+                    <textarea rows="10" cols="16" placeholder="Input here..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset"></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

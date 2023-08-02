@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onchangeFunc(){
+            var usernameObj = document.getElementById("username");
+            var value = usernameObj.value;
+            var spanObj = document.getElementById("information_username");
+            var patt = /^\w{5,12}$/;
+            if(patt.test(value)){
+                spanObj.innerText = "用户名合法！";
+                spanObj.style = "color:green";
+            } else {
+                spanObj.innerText = "用户名非法！";
+                spanObj.style = "color:red";
+            }
+        }
+    </script>
+</head>
+<body>
+    用户名: <input type="text" id="username" onchange="onchangeFunc()"/><br/>
+    <span id="information_username"></span>
+</body>
+</html>

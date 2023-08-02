@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Test</title>
+    <style>
+        .normal{
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+        var fibonacci = function (layer){
+            if(layer == 1) return 1;
+            else if(layer == 2) return 1;
+            else {
+                return fibonacci(layer - 1) + fibonacci(layer - 2);
+            }
+        }
+        var onloadAction = function (){
+            var input_answer = document.getElementById("input_answer");
+            var btn_submit = document.getElementById("btn_submit");
+            var span_result = document.getElementById("span_result");
+            btn_submit.onclick = function (){
+                var res = fibonacci(7);
+                if(input_answer.value == res){
+                    span_result.style = "color: green";
+                    span_result.innerText = "Congrats! You're right~";
+                } else {
+                    span_result.style = "color: red";
+                    span_result.innerText = "Oh my lord! You're wrong!";
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="onloadAction();">
+    <div class="normal">
+        Question: What is the 7th number in the Fibonacci Sequence?<br/>
+        <input id="input_answer" type="text">
+        <button id="btn_submit">Submit</button><br/>
+        <span id="span_result"></span>
+    </div>
+</body>
+</html>

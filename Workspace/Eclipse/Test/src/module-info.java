@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author etsuy
+ *
+ */
+module Test {
+}

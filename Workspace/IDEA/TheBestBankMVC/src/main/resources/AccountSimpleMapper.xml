@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace不用管先-->
+<mapper namespace="bankSimple">
+    <insert id="insert">
+        insert into t_act values (null, #{actno}, 20000.00);
+    </insert>
+</mapper>

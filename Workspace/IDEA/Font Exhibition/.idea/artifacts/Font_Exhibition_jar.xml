@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Font Exhibition:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Font_Exhibition_jar</output-path>
+    <root id="archive" name="Font Exhibition.jar">
+      <element id="module-output" name="Font Exhibition" />
+    </root>
+  </artifact>
+</component>

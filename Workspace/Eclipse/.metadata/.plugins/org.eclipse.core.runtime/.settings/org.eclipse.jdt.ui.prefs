@@ -1,0 +1,29 @@
+content_assist_autoactivation_triggers_java=.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.etsuya.test.PersonTest"><rhs name\="com.etsuya.test.PersonTest"/></lhs><lhs name\="com.etsuya.prac.ArgTest"><rhs name\="com.etsuya.prac.ArgTest"/></lhs><lhs name\="com.etsuya.arraytest.LaLibsTest"><rhs name\="com.etsuya.arraytest.LaLibsTest"/></lhs><lhs name\="com.etsuya.account.Account"><rhs name\="com.etsuya.account.Account"/></lhs><lhs name\="com.etsuya.prac2.GeometricObject"><rhs name\="com.etsuya.prac2.MyRectangle"/></lhs><lhs name\="com.etsuya.prac2.MyRectangle"><rhs name\="com.etsuya.prac2.MyRectangle"/></lhs><lhs name\="com.etsuya.prac3.GeometricObject"><rhs name\="com.etsuya.prac3.GeometricObject"/></lhs></history>
+content_assist_number_of_computers=17
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+markOccurrences=false
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.exception.name=e
+org.eclipse.jdt.ui.formatterprofiles.version=23
+org.eclipse.jdt.ui.gettersetter.use.is=true
+org.eclipse.jdt.ui.overrideannotation=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="typecomment_context" deleted\="false" description\="Comment for created types" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.typecomment" name\="typecomment">/**\r\n * @Description \r\n * @author Etsuya Email\:etsuya233@outlook.com\r\n * @version \r\n * @date ${date}${time}\r\n * \r\n */</template><template autoinsert\="false" context\="methodcomment_context" deleted\="false" description\="Comment for non-overriding methods" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.methodcomment" name\="methodcomment">/**\r\n * @Description \r\n * @author Etsuya\r\n * @date ${date}${time}\r\n * ${tags}\r\n */</template></templates>
+sourceHoverBackgroundColor=250,250,250
+spelling_ignore_ampersand_in_properties=true
+spelling_ignore_digits=true
+spelling_ignore_java_strings=true
+spelling_ignore_mixed=true
+spelling_ignore_non_letters=true
+spelling_ignore_sentence=true
+spelling_ignore_single_letters=true
+spelling_ignore_upper=true
+spelling_ignore_urls=true
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

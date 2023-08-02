@@ -1,0 +1,51 @@
+Theirs：
+while(l <= r){
+	//0 2 11 14 17 21 25
+	int now = 0;
+	int next = 0;
+	cnt = 0;
+	mid = (l + r) / 2;
+	//Opera
+	while(next <= n){
+		next++;
+		if(arr[next] - arr[now] >= mid){
+			now = next;
+		} else {
+			cnt ++;   
+		}
+	}
+	//Binary
+	if(cnt <= m){ //丢掉的石头太多
+		l = mid + 1;
+		ans = mid;
+	} else { //太少
+		r = mid - 1;
+	}
+}
+
+Mine：
+while(l < r){
+	//0 2 11 14 17 21 25
+	int now = 0;
+	int next = 0;
+	cnt = 0;
+	mid = (l + r) / 2;
+	//Opera
+	while(next <= n){
+		next++;
+		if(arr[next] - arr[now] >= mid){
+			now = next;
+			next = next + 1;
+		} else {
+			next = next + 1;
+			cnt ++;   
+		}
+	}
+	if(ll - arr[now] < mid) cnt++;
+	//Binary
+	if(cnt >= m){ //丢掉的石头太多
+		r = mid;
+	} else { //太少
+		l = mid + 1;
+	}
+}
