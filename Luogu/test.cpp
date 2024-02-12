@@ -6,10 +6,10 @@
 using namespace std;
 
 typedef long double lb;
+typedef long long ll;
 
 int main(){
-    lb a = 16.2;
-    int b = 4;
-    lb c = a / b;
-    cout << c;
+    int a = 5, b = 10;
+	swap(a, b);
+	cout << a << " " << b;
 }
