@@ -1,15 +1,32 @@
 #include <iostream>
-#include <vector>
-#include <queue>
-#include <set>
-#include <map>
+#include <cstring>
 using namespace std;
 
-typedef long double lb;
+char str[100005];
+int len = 0;
+
+int dp[100005][26] = {0};
 
 int main(){
-    lb a = 16.2;
-    int b = 4;
-    lb c = a / b;
-    cout << c;
+	cin >> len >> str;
+	dp[0][str[0] - 'a'] = 1;
+	for(int i = 1; i < len; i++){
+		for(int j = 0; j < 26; j++){
+			if(j == str[i] - 'a') dp[i][j] = dp[i - 1][j] + 1;
+			else dp[i][j] = dp[i - 1][j];
+		}
+	}
+//	for(int i = 0; i < 26; i++){
+//		cout << dp[len - 1][i];
+//	}
+	long long ans = 0;
+	for(int i = 0; i < len; i++){
+		for(int j = 0; j < 26; j++){
+			if(j == str[i] - 'a') continue;
+			long long temp = 1L * (dp[len - 1][j] - dp[i][j]);
+			ans += temp * (temp - 1) / 2;
+		}
+	}
+	cout << ans << "\n";
+	return 0;
 }
