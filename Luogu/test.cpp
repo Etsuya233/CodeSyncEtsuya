@@ -1,25 +1,38 @@
 #include <iostream>
+#include <queue>
+#include <algorithm>
+#include <vector>
+#include <cmath>
 using namespace std;
 
-bool isPrime(int n) {
-    if (n <= 1) return false;
-    if (n <= 3) return true;
-    if (n % 2 == 0 || n % 3 == 0) return false;
-    for (int i = 5; i * i <= n; i += 6) {
-        if (n % i == 0 || n % (i + 2) == 0) return false;
+typedef long long ll;
+
+ll st[100005][17] = {0};
+ll n = 100000;
+void initst();
+ll query(ll l, ll r);
+
+int main(){
+    for(int i = 1; i <= n; i++){
+        st[i][0] = i;
     }
-    return true;
+    initst();
+    ll l, r;
+    cin >> l >> r;
+    cout << query(l, r);
+    return 0;
 }
 
-int main() {
-    int count = 0;
-    int num = 2;
-    while (count < 937) {
-        if (isPrime(num)) {
-            count++;
+void initst(){
+    for(int j = 1; j <= 16; j++){
+        for(int i = 1; i + (1 << j) - 1 <= n; i++){
+            st[i][j] = max(st[i][j - 1], st[i + (1 << (j - 1))][j - 1]);
         }
-        num++;
     }
-    cout << "937是从2开始的第" << count << "个质数。" << endl;
-    return 0;
+}
+
+ll query(ll l, ll r){
+    ll k = log2(r - l + 1);
+    ll x = r - (1 << k) + 1;
+    return max(st[l][k], st[x][k]);
 }
