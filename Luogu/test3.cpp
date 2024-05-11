@@ -1,9 +1,15 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int arr[2][6100][1501];
+typedef struct Node {
+	vector<int> ve;
+	Node(): ve(1){}
+} node;
+
+node arr[30];
 
 int main(){
-	cout << sizeof(arr) / 1024 / 1024;
-
+	arr[1].ve[0] = 1;
+	return 0;
 }

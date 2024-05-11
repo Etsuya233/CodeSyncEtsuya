@@ -2,48 +2,66 @@
 using namespace std;
 
 typedef long long ll;
-ll n, m, k;
-ll ans = 0;
-ll moda = 1000000007;
-int arr[10][105] = {0};
-// int jj[16] = {-2, -2, -2, -1, -1, -1, -1, 0, 0, 1, 1, 1, 1, 2, 2, 2};
-// int ii[16] = {-1, 0, 1, -2, -1, 1, 2, -2, 2, -2, -1, 1, 2, -1, 0, 1};
-int ii[8] = {-1, 1, -2, 2, -2, 2, -1, 1};
-int jj[8] = {-1, 1, -2, 2, -2, 2, -1, 1};
 
-void dfs(int nowi, int nowj, int c);
+int n, m, kk;
+int val[70] = {0};
+int getVal(int num);
+int dp[102][65][65][21] = {0};
+int moda = 1000000007;
+int cnt = 0;
+
 
 int main(){
-    cin >> n >> m >> k;
-    dfs(1, 1, 0);
+    cin >> m >> n >> kk;
+    cnt = (1 << m);
+    //init
+    for(int i = 0; i < cnt; i++){
+        val[i] = getVal(i);
+    }
+    //row1
+    for(int i = 0; i < cnt; i++){
+        dp[1][i][0][val[i]] = 1;
+    }
+    //row2
+    for(int i = 0; i < cnt; i++){
+        for(int j = 0; j < cnt; j++){
+            if(j & (i << 2)) continue;
+            if(j & (i >> 2)) continue;
+            for(int k = 0; k + val[i] <= kk; k++){
+                dp[2][i][j][k + val[i]] = (dp[2][i][j][k + val[i]] + dp[1][j][0][k]) % moda;
+            }
+        }
+    }
+    //other row
+    for(int i = 3; i <= n; i++){
+        for(int j = 0; j < cnt; j++){
+            for(int k1 = 0; k1 < cnt; k1++){
+                if(j & (k1 << 2) || j & (k1 >> 2)) continue;
+                for(int k2 = 0; k2 < cnt; k2++){
+                    if(j & (k2 << 1) || j & (k2 >> 1)) continue;
+                    for(int k = 0; k + val[j] <= kk; k++){
+                        dp[i][j][k1][k + val[j]] = (dp[i][j][k1][k + val[j]] + dp[i - 1][k1][k2][k]) % moda;
+                    }
+                }
+            }
+        }
+    }
+    //ans
+    int ans = 0;
+    for(int i = 0; i < cnt; i++){
+        for(int j = 0; j < cnt; j++){
+            ans = (ans + dp[n][i][j][kk]) % moda;
+        }
+    }
     cout << ans << "\n";
     return 0;
 }
 
-void dfs(int nowi, int nowj, int c){
-    if(nowi == n + 1 || c == k){
-        if(c == k) ans = (ans + 1) % moda;
-        return;
+int getVal(int num){
+    int ret = 0;
+    while(num > 0){
+        ret++;
+        num -= (num & (-num));
     }
-    bool flag = true;
-    for(int i = 0; i < 8; i++){
-        int iii = nowi + ii[i];
-        int jjj = nowj + jj[i];
-        if(iii >= 1 && iii <= n && jjj >= 1 && jjj <= m && arr[iii][jjj] == 1){
-            flag = false;
-            break;
-        }
-    }
-    int nextj = (nowj + 1) % (m + 1);
-    int nexti = nowi;
-    if(nextj == 0){
-        nexti ++;
-        nextj = 1;
-    }
-    if(flag){
-        arr[nowi][nowj] = 1;
-        dfs(nexti, nextj, c + 1);
-        arr[nowi][nowj] = 0;
-    }
-    dfs(nexti, nextj, c);
+    return ret;
 }
