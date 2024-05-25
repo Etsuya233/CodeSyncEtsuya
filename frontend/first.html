@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>Alvvays</title>
+    <meta charset="utf-8" />
+    <style>
+        h1 { 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        article {
+            max-width: 1200px;
+        }
+        .briefing {
+            border: solid 1px lightblue;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: aliceblue;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .article {
+            border: solid 1px lightblue;
+            border-collapse: collapse;
+            padding: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: aliceblue;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .article:hover {
+            background-color: azure;
+        }
+        .article > p {
+            margin: 10px;
+        }
+        .article > p:first-child::first-letter {
+            font-size: xx-large;
+        }
+        .singer-profile {
+            width: auto; /* 让图片宽度随着高度自适应 */
+            max-height: 1em; /* 限制图片高度为文本行高度 */
+            vertical-align: middle; /* 使图片垂直居中 */
+        }
+        .article img {
+            width: 100%;
+        }
+    </style>    
+</head>
+<body>
+    <h1>Alvvays</h1>
+    <header>
+
+    </header>
+    <article>
+        <div class="briefing">
+            <img class="singer-profile" src="alvvays-molly-small.jpeg"/>Alvvays (pronounced "always") is a Canadian indie pop band.
+        </div>
+        <div class="article">
+            <p>Alvvays (pronounced "always") is a Canadian indie pop band formed in 2011, originating from Charlottetown, Prince Edward Island, and subsequently based in Toronto, Ontario. It consists of Molly Rankin (vocals and guitar), Kerri MacLellan (keyboards), Alec O'Hanley (guitars), Abbey Blackwell (bass), and Sheridan Riley (drums). Their self-titled debut studio album, released in 2014, topped the US college charts. Their second studio album, Antisocialites, was released on September 8, 2017. Their third studio album, Blue Rev, was released on October 7, 2022.</p>
+            <p>Antisocialites and Blue Rev each won the Juno Award for Alternative Album of the Year. All three of their albums were shortlisted for the Polaris Music Prize. "Belinda Says" from Blue Rev was nominated for Best Alternative Music Performance at the 66th Annual Grammy Awards.</p>
+        </div>  
+        <div class="article">
+            <img src="alvvays.jpg" />
+        </div>
+    </article>
+</body>

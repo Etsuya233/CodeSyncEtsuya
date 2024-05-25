@@ -1,6 +1,22 @@
 {
     "cmake.configureOnOpen": false,
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "span": "cpp",
+        "chrono": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "barrier": "cpp",
+        "random": "cpp",
+        "latch": "cpp",
+        "limits": "cpp",
+        "semaphore": "cpp",
+        "valarray": "cpp",
+        "algorithm": "cpp"
     }
 }

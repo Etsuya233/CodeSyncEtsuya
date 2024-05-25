@@ -1,17 +1,15 @@
 #include <iostream>
-#include <algorithm>
+#include <vector>
 using namespace std;
 
-int arr[10005];
+typedef struct Node {
+	vector<int> ve;
+	Node(): ve(1){}
+} node;
+
+node arr[30];
 
 int main(){
-	int n;
-	cin >> n;
-	for(int i = 0; i < n; i++){
-		cin >> arr[i];
-	}
-	int a;
-	cin >> a;
-	cout << lower_bound(arr, arr + n, a, greater<int>()) - arr << "\n";
-	
+	arr[1].ve[0] = 1;
+	return 0;
 }
